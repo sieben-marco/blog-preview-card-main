@@ -1,0 +1,95 @@
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+
+    /* colors */
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+
+    /* fonts */
+    --fs-p: 1.6rem; /* size paragraph */
+    --ff: 'Figtree', sans-serif; /* family */
+    --fw-b: 600; /* weight bold */
+    --fw-sb: 800; /* weight super bold */
+}
+
+/* reset */
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    display: block; /* to remove inline white space*/
+}
+
+/* fonts */
+p {
+    font-weight: var(--fw-b);
+    font-size: var(--fs-p);
+}
+
+p:first-child {
+    color: var(--black);
+}
+
+p:last-child {
+    color: var(--grey);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h1, h2, p {
+    font-family: var(--ff);
+}
+
+h1, h2, .container__user p {
+    font-weight: var(--fw-sb);
+    color: var(--black);
+}
+
+/* layout */
+body {
+    background-color: var(--yellow);
+}
+.container {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    margin: 2.5rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: solid .1rem var(--black);
+    box-shadow: var(--black) .8rem .8rem;
+
+    background-color: var(--white);
+}
+
+.container__image {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+
+.attribution {
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 0;
+}
