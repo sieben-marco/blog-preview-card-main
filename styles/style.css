@@ -122,18 +122,42 @@ h1 {
 .container__user {
     display: flex;
     align-items: center;
-    column-gap: 1.2rem;
+    column-gap: 1rem;
 }
 
 .container__user img {
-    width: 3.4rem;
+    width: 3rem;
+}
+
+/* more than 385px */
+@media screen and (min-width: 385px) {
+    .container {
+        width: 33.8rem;
+    }
+    body {
+        background-color: tomato;
+    }
+    
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .container__user img {
+        width: 2.5rem;
+    }
+    
+    .container__user p {
+        font-size: 1.2rem;
+    }
 }
 
 /* more than 375px */
 @media screen and (min-width: 375px) {
-    .container {
-        width: 33rem;
-    }
+
 }
 
 /* less than 319px */
