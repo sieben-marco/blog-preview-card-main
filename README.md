@@ -52,6 +52,7 @@ I wanna continue to resolve challanges from Frontend Mentor and learn more about
 - [MDN :last-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child) - Article about pseudo class last-child.
 - [MDN :first-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child) - Article about pseudo class first-child.
 - [MDN :nth-child](https://developer.mozilla.org/pt-BR/docs/Web/CSS/:nth-child) - Article about pseudo class nth-child.
+- [MDN cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor) - Article about cursor (url(custom-cursor-example.png)).
 
 ## Author
 
