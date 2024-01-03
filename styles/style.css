@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Figtree";
+    src: url();
+}
+
 :root {
     font-size: 62.5%; /* 1rem = 10px */
 
@@ -115,8 +120,17 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+h2:hover, .container__user p:hover, .container__user img {
+    cursor: url(../assets/images/cursor-de-mao24.png), pointer;
+}
+
 h1 {
     margin-block: 1.5rem;
+}
+
+h1:hover {
+    color: var(--yellow);
+    cursor: url(../assets/images/cursor-de-mao24.png), pointer;
 }
 
 .container__user {
