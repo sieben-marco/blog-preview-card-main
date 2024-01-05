@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "Figtree";
-    src: url();
-}
-
 :root {
     font-size: 62.5%; /* 1rem = 10px */
 
@@ -13,19 +8,15 @@
     --black: hsl(0, 0%, 7%);
 
     /* fonts */
-    --fs-p: 1.38rem; /* size paragraph */
+    --fs-p: 1.58rem; /* size paragraph */
     --ff: 'Figtree', sans-serif; /* family */
     --fw-b: 600; /* weight bold */
     --fw-sb: 800; /* weight super bold */
 }
 
 /* reset */
-html {
-    box-sizing: border-box;
-}
-
 *, *::after, *::before {
-    box-sizing: inherit;
+    box-sizing: border-box;
     /* outline: .2rem solid tomato; */
 }
 
@@ -35,13 +26,12 @@ body, h1, h2, p {
 }
 
 img {
-    /* width: 100%; */
     display: block; /* to remove inline white space*/
 }
 
 /* fonts */
 p {
-    font-size: var(--fs-p);
+    font-size: 1.4rem;
 }
 
 section p:nth-child(2) { /* select the second paragraph */
@@ -52,8 +42,8 @@ section p:nth-child(2) { /* select the second paragraph */
 
 section p:last-child { /* select the last paragraph */
     color: var(--grey);
-    line-height: 1.5;
-    font-size: var(--fs-p);
+    line-height: 1.6;
+    font-size: 1.38rem;
 }
 
 h1 {
@@ -90,10 +80,12 @@ body {
 
     width: 88%;
     margin: auto;
-    padding: 2.4rem;
+    padding: 2.2rem;
     border-radius: 2rem;
-    border: solid .1rem var(--black);
-    box-shadow: var(--black) .8rem .8rem;
+    border: solid .2rem var(--black);
+    border-top-color: var(--grey);
+    border-left-color: var(--grey);
+    box-shadow: var(--black) .8rem .7rem;
 
     background-color: var(--white);
 
@@ -109,7 +101,7 @@ body {
 }
 
 .container__main {
-    margin-block: 2.4rem;
+    margin-block: 2.2rem;
 }
 
 h2 {
@@ -125,7 +117,7 @@ h2:hover, .container__user p:hover, .container__user img {
 }
 
 h1 {
-    margin-block: 1.5rem;
+    margin-block: 1.6rem;
 }
 
 h1:hover {
@@ -136,7 +128,7 @@ h1:hover {
 .container__user {
     display: flex;
     align-items: center;
-    column-gap: 1rem;
+    column-gap: 1.2rem;
 }
 
 .container__user img {
@@ -144,25 +136,37 @@ h1:hover {
 }
 
 /* more than 385px */
-@media screen and (min-width: 385px) {
+@media screen and (min-width: 380px) {
     .container {
-        width: 33.8rem;
+        max-width: 384px;
     }
     
     h1 {
-        font-size: 2.1rem;
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    section p:nth-child(2) { /* select the second paragraph */
+        font-size: 1.4rem;
+    }
+    
+    section p:last-child { /* select the last paragraph */
+        font-size: var(--fs-p);
     }
 
     img {
-        width: 100%;
+        max-width: 100%;
     }
 
     .container__user img {
-        width: 2.5rem;
+        width: 3.2rem;
     }
     
     .container__user p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
 
